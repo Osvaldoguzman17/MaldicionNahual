@@ -1,0 +1,31 @@
+//Se ajusta el tamaño de la imagen principal
+.portada {
+    width: 100%;
+    display: block;
+  }
+  
+  //las 3 imagenes se acomodan en la posicion deseada
+  .imagenes-circulares {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  //las imagenes se redondean, se ajustan tamaño y se les pone un borde de color 
+  .circular {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #8f9098; 
+  }
+  //Se acomoda la imagen inferior
+  .unity {
+    width: 30%;
+    margin: 60px auto;
+  }
+  
+  
+  
+
+  

@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!--Boton para regresar-->
+    <ion-button fill="clear" (click)="regresar()" color="primary">
+      <ion-icon name="arrow-back-outline" slot="start"></ion-icon>
+     REGRESAR
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="detalle-container">
+    <!-- Imagen del personaje -->
+    <div class="detalle-img-container">
+      <img [src]="personaje.imagen" class="detalle-img" alt="Imagen del personaje">
+    </div>
+
+    <!-- Detalles del personaje -->
+    <div class="detalle-info">
+      <!--se declara la etiqueta con un nombre para poderla editar en el sccs en este caso "detalle-nombre"-->
+      <h1 class="detalle-nombre">{{ personaje.nombre }}</h1>
+
+      <ion-item lines="none" class="detalle-atributo">
+        <!--iconos-->
+        <ion-icon name="heart-outline" slot="start"></ion-icon>
+        <!--con personaje.tipo_dato traemos la informacion especifica de la api y la acomodamos en tipo bloques-->
+        <p><strong>Vida:</strong> {{ personaje.vida }}</p>
+      </ion-item>
+
+      <ion-item lines="none" class="detalle-atributo">
+        <ion-icon name="flash-outline" slot="start"></ion-icon>
+        <p><strong>Habilidades:</strong> {{ personaje.habilidades }}</p>
+      </ion-item>
+
+      <ion-item lines="none" class="detalle-atributo">
+        <ion-icon name="bulb-outline" slot="start"></ion-icon>
+        <p><strong>Funcion:</strong> {{ personaje.funcion }}</p>
+      </ion-item>
+    </div>
+  </div>
+</ion-content>

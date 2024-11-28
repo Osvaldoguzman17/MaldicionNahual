@@ -1,0 +1,28 @@
+<ion-content>
+  <!--Imagen principal de la pantalla, se utiliza la etiqueta ion-img para mostrar la imagen -->
+  <ion-img class="portada" src="../../assets/img/portada2.jpg" alt="Portada"></ion-img>
+  <!--Se declaran las etiquetas y agregan las imagenes que seran redondeadas-->
+  <div class="imagenes-circulares">
+    <img class="circular" src="../../assets/img/esposa.jpg" alt="Esposa">
+    <img class="circular" src="../../assets/img/pueblerino.jpg" alt="Pueblerino">
+    <img class="circular" src="../../assets/img/prota.jpg" alt="Protagonista">
+  </div>
+  <ion-img class="unity" src="../../assets/img/unity.jpg" alt="unity"></ion-img>
+</ion-content>
+
+<ion-footer>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button routerLink="/principal">
+      <ion-icon name="home-outline"></ion-icon>
+      <ion-label>Principal</ion-label>
+    </ion-tab-button>
+    <ion-tab-button routerLink="/personajes">
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Personajes</ion-label>
+    </ion-tab-button>
+    <ion-tab-button routerLink="/jugabilidad">
+      <ion-icon name="game-controller-outline"></ion-icon>
+      <ion-label>Jugabilidad</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-footer>

@@ -1,0 +1,7 @@
+{
+  "name": "nahual",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
