@@ -1,47 +1,78 @@
+
+
+/* Estilos para ion-toolbar dentro del ion-header */
+ion-toolbar {
+  --background:  #145b63;  
+  --color: white; 
+}
+/* Estilo para ion-card-header */
+ion-card-header {
+  --background: #145b63; /* Fondo azul-verde */
+  color: white; /* Texto en blanco */
+}
+
+
 //Aqui es donde se acomodan las etiquetas usadas y se le da estilo al html para darle un buen formato
 .container {
     padding: 16px;
   }
-  
+  //Es para las tarjetasque tienen  margen inferior
   ion-card {
     margin-bottom: 16px;
+    --background: #145b63;
   }
-  
+  //Estilo para el título
   ion-card-title {
     font-size: 1.4rem;
     font-weight: bold;
-    color: #3a3a3a;
+    color: #f0efef;
   }
-  
+  //Estilo para el subtítulo
   ion-card-subtitle {
     font-size: 1.2rem;
     font-weight: 500;
-    color: #666;
+    color: #eeebeb;
+  }
+  ion-card h3 {
+    color: #e9e8e5; 
+    font-weight: bold; 
+    font-size: 1.2rem; 
   }
   
-  ion-card-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #444;
-  }
-  
+ 
+ 
+  //Estilo para las imágenes que se adaptan al tamaño de su contenedor
   .responsive-img {
     width: 100%;
     height: auto;
     margin-top: 8px;
     border-radius: 8px;
   }
-  
-  ion-tab-bar {
-    background: #f8f9fa;
+//Imagen de fondo
+  ion-content {
+    --background: url('/assets/img/fondo.jpg') no-repeat center center / cover;
   }
-  
-  ion-tab-button ion-label {
-    font-size: 0.9rem;
-  }
-  
-  ion-tab-button ion-icon {
-    font-size: 1.4rem;
-    color: #555;
-  }
-  
+
+
+ion-footer {
+  background-color: rgba(20, 91, 99); 
+  color: rgb(16, 15, 15); 
+}
+
+/*estilos del ion-tab-bar */
+ion-tab-bar {
+  --background: rgba(20, 91, 99);
+  --color: rgb(20, 17, 17); 
+}
+
+/* íconos dentro ion-tab-button */
+ion-tab-button ion-icon {
+  color: rgb(17, 15, 15); 
+  font-size: 1.4rem;
+}
+
+/* texto del ion-tab-button */
+ion-tab-button ion-label {
+  color: rgb(16, 15, 15);  
+  font-size: 0.9rem; 
+}

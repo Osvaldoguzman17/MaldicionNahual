@@ -5,5 +5,6 @@ export interface Personajes{
     vida: number;
     funcion: string;
     imagen: string;
-    descripcion?: string;
+    //descripcion no viene en la api por que se agregara la informacion manualmente
+    descripcion?: string;//el signo de interrogacion hace saber que esta propiedad puede estar presente o no
 }

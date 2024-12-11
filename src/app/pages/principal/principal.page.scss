@@ -25,7 +25,34 @@
     margin: 60px auto;
   }
   
+  //Imagen de fondo
+  ion-content {
+    --background: url('/assets/img/fondo.jpg') no-repeat center center / cover;
+  }
   
+  //footer
+  ion-footer {
+    background-color: rgba(20, 91, 99); 
+    color: rgb(16, 15, 15); 
+  }
+  
+  /*estilos del ion-tab-bar */
+  ion-tab-bar {
+    --background: rgba(20, 91, 99);
+    --color: rgb(20, 17, 17); 
+    --color-selected: #ffd700; 
+  }
+  
+  /* íconos dentro ion-tab-button */
+  ion-tab-button ion-icon {
+    color: rgb(17, 15, 15); 
+    font-size: 1.4rem;
+  }
+  
+  /* texto del ion-tab-button */
+  ion-tab-button ion-label {
+    color: rgb(16, 15, 15);  
+    font-size: 0.9rem; 
+  }
   
 
-  

@@ -1,3 +1,20 @@
+/* Estilos para ion-header */
+ion-header {
+  --background: #145B63; 
+  color: white; 
+}
+
+/* Estilos para ion-toolbar dentro del ion-header */
+ion-toolbar {
+  --background: #145B63; 
+  --color: white; 
+}
+
+/* Botón de regreso */
+ion-back-button {
+  --color: white; 
+}
+
 .personajes-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -26,17 +43,56 @@
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #007bff; /* Cambia al color que prefieras */
+  border: 3px solid #007bff; 
   margin-top: 16px;
 }
 
 .personaje-nombre {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #333;
+  color: #f5f5f5;
   margin-top: 8px;
 }
+  //fondo donde estan las imagnes y la descripcion
+ion-card {
+   margin-bottom: 16px;
+  --background: #145b63;
+  }
 
 ion-card-header {
   padding: 8px;
 }
+ion-card-content {
+  color: #f4f4f2; 
+  font-size: 1rem; 
+}
+//Imagen de fondo
+
+ion-content {
+  --background: url('/assets/img/fondo.jpg') no-repeat center center / cover;
+}
+
+ion-footer {
+  background-color: rgba(20, 91, 99); 
+  color: rgb(16, 15, 15); 
+}
+
+/*estilos del ion-tab-bar */
+ion-tab-bar {
+  --background: rgba(20, 91, 99);
+  --color: rgb(20, 17, 17); 
+}
+
+/* íconos dentro ion-tab-button */
+ion-tab-button ion-icon {
+  color: rgb(17, 15, 15); 
+  font-size: 1.4rem;
+}
+
+/* texto del ion-tab-button */
+ion-tab-button ion-label {
+  color: rgb(16, 15, 15);  
+  font-size: 0.9rem; 
+}
+
+
